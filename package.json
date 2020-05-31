@@ -1,0 +1,25 @@
+{
+  "name": "watch-map",
+  "version": "1.0.0",
+  "main": "public/wc/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "country-iso-3-to-2": "^1.1.0",
+    "d3-scale": "^3.2.1",
+    "sirv-cli": "^0.4.4"
+  }
+}
